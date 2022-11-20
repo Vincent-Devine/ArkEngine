@@ -5,9 +5,30 @@ Create own game engine specialize in RPG/FPS games for learning<br/>
 
 <hr/>
 
+## Table of content ##
+ - [Engine functionnality](#engine-functionnality)
+ - [Clone](#clone)
+ - [Technologie](#Technologie)
+ 
+<hr/>
+
 ## Engine functionnality ##
 - TODO
 <br/>
+
+<hr/>
+
+## Clone ##
+Utilisation of git [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for my own [ToolBox](https://github.com/Vincent-Devine/ToolBox).
+<br/>
+
+```bash
+$git clone git@github.com:Vincent-Devine/ArkEngine.git
+
+$git submodule init
+
+$git submodule update 
+```
 
 <hr/>
 
