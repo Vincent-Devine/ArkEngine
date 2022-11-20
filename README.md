@@ -16,7 +16,7 @@ Create own game engine specialize in RPG/FPS games for learning<br/>
 - Graphics Library : [Vulkan](https://www.vulkan.org/)
 - Compilation : CMAKE
 - IDE : Visual Studio
-- Versionning : GitHub (Repository : https://github.com/Vincent-Devine/RPG_Engine)
+- Versionning : GitHub (Repository : https://github.com/Vincent-Devine/ArkEngine)
 
 <hr/>
 Author : Vincent DEVINE <br/>
