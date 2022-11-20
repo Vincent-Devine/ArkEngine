@@ -8,6 +8,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(HEADERS
 	"ArkEngine/Core/DebugSystem/Assertion.hpp"
 	"ArkEngine/Core/DebugSystem/Log.hpp"
+	"ArkEngine/ToolBox/Math/Headers/Mat4x4.hpp"
+	"ArkEngine/ToolBox/Math/Headers/Utils.hpp"
+	"ArkEngine/ToolBox/Math/Headers/Vector2.hpp"
+	"ArkEngine/ToolBox/Math/Headers/Vector3.hpp"
+	"ArkEngine/ToolBox/Math/Headers/Vector4.hpp"
  )
 
 set(SOURCES
@@ -30,6 +35,7 @@ include_directories( "ArkEngine/Common"
 					 "ArkEngine/Core"
 					 "ArkEngine/Core/DebugSystem"
 					 "ArkEngine/External"
+					 "ArkEngine/ToolBox/Math/Headers"
 
 )
 

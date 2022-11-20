@@ -1,6 +1,7 @@
 // Core::Debug
 #include "Assertion.hpp"
 
+
 int main()
 {
 	Core::Debug::Log::OpenFile("Log.txt");
