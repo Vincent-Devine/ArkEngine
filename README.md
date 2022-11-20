@@ -1,7 +1,7 @@
-# RPG Engine
+# ArkEngine
 
 ## Project description ##
-Create own game engine specialize in RPG games for learning<br/>
+Create own game engine specialize in RPG/FPS games for learning<br/>
 
 <hr/>
 
@@ -12,11 +12,12 @@ Create own game engine specialize in RPG games for learning<br/>
 <hr/>
 
 ## Technologie ##
-- Engine langage : c++
-- Graphics Library : [OpenGL](https://www.opengl.org/)
+- Engine langage : C++
+- Graphics Library : [Vulkan](https://www.vulkan.org/)
+- Compilation : CMAKE
 - IDE : Visual Studio
 - Versionning : GitHub (Repository : https://github.com/Vincent-Devine/RPG_Engine)
 
 <hr/>
 Author : Vincent DEVINE <br/>
-Project start : 12-10-2022 <br/>
+Project start : 20-11-2022 <br/>
