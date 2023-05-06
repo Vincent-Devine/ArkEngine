@@ -4,3 +4,4 @@
 #include "Ark/Application.hpp"
 
 #include "EntryPoint.hpp"
+#include "Logging.hpp"

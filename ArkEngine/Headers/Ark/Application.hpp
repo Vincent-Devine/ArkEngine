@@ -4,7 +4,7 @@
 
 namespace ArkEngine
 {
-	class ARK_API Application
+	class ARK_ENGINE_API Application
 	{
 		// Methods
 	public:

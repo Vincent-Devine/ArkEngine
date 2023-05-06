@@ -27,9 +27,15 @@
     <ClInclude Include="Headers\EntryPoint.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="Headers\Logging.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Ark\Application.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Logging.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

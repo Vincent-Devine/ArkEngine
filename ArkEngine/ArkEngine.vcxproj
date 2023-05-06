@@ -57,7 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ARK_PLATFORM_WINDOWS;ARK_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)Headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -88,9 +88,11 @@
     <ClInclude Include="Headers\Ark\Application.hpp" />
     <ClInclude Include="Headers\Ark\Core.hpp" />
     <ClInclude Include="Headers\EntryPoint.hpp" />
+    <ClInclude Include="Headers\Logging.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Ark\Application.cpp" />
+    <ClCompile Include="Sources\Logging.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
