@@ -1,5 +1,8 @@
 # Directory
 .vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
 bin/
 bin-int/
 
