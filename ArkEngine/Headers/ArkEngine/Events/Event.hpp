@@ -13,7 +13,7 @@ namespace ArkEngine::Event
 		WindowClose, WindowResize, WindowLostFocus, WindowMoved,
 		AppTick, AppUpdate, AppRender,
 		KeyPressed, KeyReleased,
-		MouseButtonPressed, MouseButtonReleased, MouseMouved, MouseScrolled
+		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
 	enum EventCategory : int
@@ -47,10 +47,32 @@ namespace ArkEngine::Event
 		Event(const EventData& p_eventData);
 
 		bool IsInCategory(const EventCategory& p_category);
-		virtual const std::string& ToString() const { return GetName(); };
+		virtual const std::string ToString() const { return GetName(); };
 
 		const char* GetName() const				{ return name; };
 		const EventType& GetEventType() const	{ return eventType; };
 		const int GetCategory() const			{ return eventCategory; };
 	};
-} // namespace
+
+	class ARK_ENGINE_API EventDispatcher
+	{
+		// Attributes
+	private:
+		Event& event;
+
+		// Methods
+	public:
+		EventDispatcher(Event& p_event);
+
+		template<typename T, typename F>
+		bool Dispatch(const F& p_function)
+		{
+			if (event.GetEventType() == static_cast<Event>(T).GetEventType())
+			{
+				event.handled |= p_function(static_cast<T&>(event));
+				return true;
+			}
+			return false;
+		}
+	};
+}

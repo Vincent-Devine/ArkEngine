@@ -34,7 +34,7 @@ namespace ArkEngine::Event
 	public:
 		KeyPressedEvent(const int p_keyCode, const unsigned int p_repeatCount);
 
-		const std::string& ToString() const override;
+		const std::string ToString() const override;
 		
 		const int GetRepeatCount() const { return repeatCount; };
 	};
@@ -51,6 +51,6 @@ namespace ArkEngine::Event
 	public:
 		KeyReleasedEvent(const int p_keyCode);
 
-		const std::string& ToString() const override;
+		const std::string ToString() const override;
 	};
 }

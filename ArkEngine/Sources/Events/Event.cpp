@@ -14,4 +14,9 @@ namespace ArkEngine::Event
 	{
 		return GetCategory() & p_category;
 	}
+
+	EventDispatcher::EventDispatcher(Event& p_event)
+		: event(p_event)
+	{
+	}
 }

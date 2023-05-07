@@ -22,7 +22,7 @@ namespace ArkEngine::Event
 	{
 	}
 
-	const std::string& KeyPressedEvent::ToString() const
+	const std::string KeyPressedEvent::ToString() const
 	{
 		std::stringstream ss;
 		ss << "KeyPressedEvent: " << keyCode << " (" << repeatCount << " repeats)";
@@ -37,7 +37,7 @@ namespace ArkEngine::Event
 	{
 	}
 
-	const std::string& KeyReleasedEvent::ToString() const
+	const std::string KeyReleasedEvent::ToString() const
 	{
 		std::stringstream ss;
 		ss << "KeyReleasedEvent: " << keyCode;
