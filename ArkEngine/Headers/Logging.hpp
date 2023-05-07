@@ -33,7 +33,7 @@ void ARK_ENGINE_API DebugLog(const std::string& p_filename, const unsigned int p
 #define __FILENAME__ (strrchr(__FILE__, '\\') ? strrchr(__FILE__, '\\') + 1 : __FILE__)
 #define LOG(p_log, p_logLevel) DebugLog(__FILENAME__, __LINE__, __FUNCTION__, p_log, p_logLevel);
 
-#ifdef _DEBUG
+#ifdef ARK_ENGINE_DEBUG
 	#define Assertion(p_expression, p_log) if(!(p_expression)) { LOG(p_log, LOG_LEVEL::Critical); __debugbreak(); }
 #else
 	#define Assertion(p_expression, p_log) if(!(p_expression)) { LOG(p_log, LOG_LEVEL::Critical); abort(); }
