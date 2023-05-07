@@ -35,7 +35,7 @@ namespace ArkEngine::Core
 }
 
 #define __FILENAME__ (strrchr(__FILE__, '\\') ? strrchr(__FILE__, '\\') + 1 : __FILE__)
-#define LOG(p_log, p_logLevel) ArkEngine::Core::DebugLog(__FILENAME__, __LINE__, __FUNCTION__, p_log, p_logLevel);
+#define LOG(p_log, p_logLevel) ArkEngine::Core::DebugLog(__FILENAME__, __LINE__, __func__, p_log, p_logLevel);
 
 #ifdef ARK_ENGINE_DEBUG
 	#define Assertion(p_expression, p_log) if(!(p_expression)) { LOG(p_log, LogLevel::Critical); __debugbreak(); }
