@@ -1,6 +1,6 @@
-#include "Ark/Application.hpp"
+#include "ArkEngine/Core/Application.hpp"
 
-namespace ArkEngine
+namespace ArkEngine::Core
 {
 	Application::Application()
 	{

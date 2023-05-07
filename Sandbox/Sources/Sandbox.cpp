@@ -1,10 +1,10 @@
 #include <ArkEngine.hpp>
 
-class SandBox : public ArkEngine::Application
+class SandBox : public ArkEngine::Core::Application
 {
 };
 
-ArkEngine::Application* ArkEngine::CreateApplication()
+ArkEngine::Core::Application* ArkEngine::Core::CreateApplication()
 {
 	return new SandBox;
 }

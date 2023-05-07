@@ -2,7 +2,7 @@
 
 #include "Core.hpp"
 
-namespace ArkEngine
+namespace ArkEngine::Core
 {
 	class ARK_ENGINE_API Application
 	{

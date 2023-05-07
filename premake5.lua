@@ -78,7 +78,6 @@ project "Sandbox"
 	includedirs
 	{
 		"ArkEngine/ThirdParty/",
-		"ArkEngine/Headers/Ark",
 		"ArkEngine/Headers"
 	}
 

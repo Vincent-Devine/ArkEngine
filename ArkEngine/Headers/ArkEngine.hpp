@@ -1,7 +1,7 @@
 #pragma once
 
 // For use by ArkEngine
-#include "Ark/Application.hpp"
-
-#include "EntryPoint.hpp"
-#include "Logging.hpp"
+	// Core
+#include "ArkEngine/Core/Application.hpp"
+#include "ArkEngine/Core/Logging.hpp"
+#include "ArkEngine/Core/EntryPoint.hpp"
