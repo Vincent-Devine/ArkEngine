@@ -9,7 +9,7 @@
 
 namespace ArkEngine::Core
 {
-	enum class LOG_LEVEL : unsigned int
+	enum class LogLevel : unsigned int
 	{
 		Info,
 		Validation,
@@ -28,17 +28,17 @@ namespace ArkEngine::Core
 		static void OpenFile(const std::filesystem::path& p_filename);
 		static void CloseFile();
 
-		static void Print(const std::string& p_log, const LOG_LEVEL& p_logLevel);
+		static void Print(const std::string& p_log, const LogLevel& p_logLevel);
 	};
 
-	void ARK_ENGINE_API DebugLog(const std::string& p_filename, const unsigned int p_line, const std::string& p_functionName, const std::string p_log, const LOG_LEVEL& p_logLevel);
+	void ARK_ENGINE_API DebugLog(const std::string& p_filename, const unsigned int p_line, const std::string& p_functionName, const std::string p_log, const LogLevel& p_logLevel);
 }
 
 #define __FILENAME__ (strrchr(__FILE__, '\\') ? strrchr(__FILE__, '\\') + 1 : __FILE__)
 #define LOG(p_log, p_logLevel) ArkEngine::Core::DebugLog(__FILENAME__, __LINE__, __FUNCTION__, p_log, p_logLevel);
 
 #ifdef ARK_ENGINE_DEBUG
-	#define Assertion(p_expression, p_log) if(!(p_expression)) { LOG(p_log, LOG_LEVEL::Critical); __debugbreak(); }
+	#define Assertion(p_expression, p_log) if(!(p_expression)) { LOG(p_log, LogLevel::Critical); __debugbreak(); }
 #else
-	#define Assertion(p_expression, p_log) if(!(p_expression)) { LOG(p_log, LOG_LEVEL::Critical); abort(); }
+	#define Assertion(p_expression, p_log) if(!(p_expression)) { LOG(p_log, LogLevel::Critical); abort(); }
 #endif
