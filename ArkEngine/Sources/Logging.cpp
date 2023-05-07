@@ -16,7 +16,7 @@ void DebugLog(const std::string& p_filename, const unsigned int p_line, const st
 
 std::ofstream Logging::logFile;
 
-void Logging::OpenFile(std::filesystem::path const& p_filename)
+void Logging::OpenFile(const std::filesystem::path& p_filename)
 {
     if (logFile && logFile.is_open())
     {
@@ -32,7 +32,7 @@ void Logging::OpenFile(std::filesystem::path const& p_filename)
     }
     else
     {
-        LOG("Open log file " + p_filename.string(), LOG_LEVEL::Info);
+        LOG("Open log file " + p_filename.string(), LOG_LEVEL::Validation);
     }
 }
 
